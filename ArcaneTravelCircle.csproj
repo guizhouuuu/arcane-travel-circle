@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>1.2.1</Version>
+    <EnableHarmony>true</EnableHarmony>
+    <AssemblyName>ArcaneTravelCircle</AssemblyName>
+    <RootNamespace>ArcaneTravelCircle</RootNamespace>
+    <EnableModDeploy>false</EnableModDeploy>
+    <EnableModZip>true</EnableModZip>
+    <ModFolderName>ArcaneTravelCircle</ModFolderName>
+    <ModZipPath>$(MSBuildProjectDirectory)/../packages</ModZipPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <Compile Remove="tests/**/*.cs" />
+    <None Update="assets/**/*;i18n/**/*;docs/**/*;README.md;REVIEW.md;TESTING.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

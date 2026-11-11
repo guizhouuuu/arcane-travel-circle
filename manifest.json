@@ -1,0 +1,16 @@
+{
+  "Name": "Arcane Travel Circle",
+  "Author": "guizhouuuu",
+  "Version": "1.2.1",
+  "Description": "Right-click the Wizard's travel circles to open the map. Build a farm gateway and up to ten non-blocking outdoor network circles.",
+  "UniqueID": "guizhouuuu.ArcaneTravelCircle",
+  "EntryDll": "ArcaneTravelCircle.dll",
+  "MinimumApiVersion": "4.5.2",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "Bouhm.NPCMapLocations",
+      "IsRequired": false
+    }
+  ]
+}
